@@ -2,4 +2,5 @@
 
 Technologies used:
 - HTML
-- CSS
+- CSS, Responsive design
+- JavaScript
