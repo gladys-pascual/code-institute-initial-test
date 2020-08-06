@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Bulalo</h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Bulalo_%28Philippines%29.jpg/800px-Bulalo_%28Philippines%29.jpg"
+          alt="bulalo"
+        />
+        <p class="description">Filipino beef stew, perfect for cold winters</p>
+      </header>
+      <section
+        id="ingredients"
+        onmouseover="onHover(this, '300%')"
+        onmouseout="onHover(this, '100%')"
+      >
+        <h2>
+          Ingredients <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </h2>
+        <ul>
+          <li>2 beef marrow bones (cut to expose marrow on one end)</li>
+          <li>1 pound beef shank</li>
+          <li>1 onion</li>
+          <li>3 cloves of garlic</li>
+          <li>2 tablespoons of fish sauce</li>
+          <li>salt to taste</li>
+          <li>2 cobs of corn</li>
+          <li>1 chayote, peeld and cubed</li>
+          <li>3 baby bok choy</li>
+        </ul>
+      </section>
+      <section
+        id="preparation"
+        onmouseover="onHover(this, '300%')"
+        onmouseout="onHover(this, '100%')"
+      >
+        <h2>Preparation <i class="fa fa-cutlery" aria-hidden="true"></i></h2>
+        <ol>
+          <li>
+            Boil a large pot of water. Add the marrow bones and beef shank and
+            return to a boil. Continue boiling until you don't see any more red
+            blood coming from the meat or bones (about 10 minutes), then remove
+            the meat and bones with tongs and scrub under cold water to remove
+            any scum. Dump the water in the pot out and rinse the pot. This
+            process rids the meat of excess blood and will ensure your soup is
+            nice and clear.
+          </li>
+          <li>
+            Return the cleaned meat and bones to the pot then add the onion,
+            garlic, peppercorns and patis. Cover with water then bring it to a
+            rolling boil and skim off any scum that accumulates.
+          </li>
+          <li>
+            Reduce the heat to medium low. If you are using a pressure cooker,
+            afix the lid and let it cook for 1 1/2 hours. If you're not using a
+            pressure cooker, simmer until the meat on the shank is fork tender
+            (4-5 hours). Skim off any excessive fat from the top but do not
+            remove it all (remember, fat=flavour). Transfer the meat and bones
+            to a bowl, then strain the stock through a fine mesh sieve, discard
+            the solids then return the meat and bones to the strained stock.
+          </li>
+          <li>
+            Add the corn and chayote and simmer for another 20 minutes or until
+            the chayote is tender. Salt to taste, then add the bok choy at the
+            last minute. Serve with rice.
+          </li>
+        </ol>
+      </section>
+      <footer>
+        <p>Copyright Gladys Pascual 2020</p>
+      </footer>
+    </div>
+    <!-- solution for final challenge 1 -->
+    <script>
+      const onHover = (x, size) => {
+        console.log(x);
+        x.firstElementChild.firstElementChild.style.fontSize = size;
+      };
+    </script>
+  </body>
+</html>

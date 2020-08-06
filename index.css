@@ -1,0 +1,63 @@
+body {
+  font-family: Sans-Serif;
+  color: SlateGray;
+}
+
+#container {
+  width: 60%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h1,
+h2 {
+  color: teal;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+.description {
+  text-align: center;
+  font-style: italic;
+  font-size: 120%;
+}
+
+li {
+  line-height: 28px;
+}
+
+footer {
+  margin-top: 70px;
+  background-color: teal;
+  color: white;
+}
+
+footer p {
+  text-align: center;
+  padding: 15px 0px;
+}
+
+/* solution for final challenge 2 */
+#ingredients:hover .fa,
+#preparation:hover .fa {
+  font-size: 300%;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 200%;
+  }
+}
